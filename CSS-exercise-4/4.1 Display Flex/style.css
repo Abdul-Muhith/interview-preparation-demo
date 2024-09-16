@@ -1,0 +1,61 @@
+/* Reset some default styles */
+body,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  padding: 10px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  color: rebeccapurple;
+}
+
+.container {
+  padding: 10px;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  li {
+    margin: 0 15px;
+  }
+}
