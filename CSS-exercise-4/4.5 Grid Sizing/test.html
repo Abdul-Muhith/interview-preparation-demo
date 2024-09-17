@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Sizing Exercise</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .container-main {
+        display: grid;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-columns: auto 400px minmax(200px, 500px);
+        grid-auto-rows: 50px;
+        width: 80%;
+        background-color: #ddd;
+        padding: 20px;
+        margin: 2rem;
+      }
+
+      .data {
+        background-color: darkviolet;
+        color: white;
+        font-size: 18px;
+        padding: 20px;
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid Sizing Exercise</h1>
+    <div class="container-main">
+      <div class="data">width expands to fill space</div>
+      <div class="data">400px wide</div>
+      <div class="data">min 200px max 500px wide</div>
+      <div class="data">width expands to fill space</div>
+      <div class="data">400px wide</div>
+      <div class="data">min 200px max 500px wide</div>
+      <div class="data">width expands to fill space</div>
+      <div class="data">400px wide</div>
+      <div class="data">min 200px max 500px wide</div>
+      <div class="data">50px high</div>
+    </div>
+  </body>
+</html>
